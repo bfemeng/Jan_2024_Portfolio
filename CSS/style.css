@@ -1,6 +1,10 @@
 /*Raleway Font*/
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
+/* Shandows Into Light Two */
+  @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Shadows+Into+Light+Two&display=swap');
+
+
 
 /* ----- VARIABLES ----- */
 :root{
@@ -88,7 +92,8 @@ nav{
    position: relative;
 }
 .nav-name{
-    font-size: 35px;
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 45px;
     font-weight: 600;
     color: var(--first-color);
 }
@@ -222,7 +227,7 @@ nav{
     margin: auto 0;
     width: 380px;
     height: 80px;
-    border-radius: 55% 45% 55% 45%;
+    border-radius: 155% 45% 55% 45%;
     overflow: hidden;
     animation: imgFloat 7s ease-in-out infinite;
 }
@@ -445,7 +450,7 @@ h3{
     margin-block: 5px;
 }
 .contact-info p>i{
-    font-size: 18px;
+    font-size: 30px;
 }
 .contact-info::after{
     background: var(--color-white);
