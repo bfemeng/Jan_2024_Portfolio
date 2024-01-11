@@ -11,6 +11,20 @@
     <link rel="stylesheet" href="CSS/style.css">
 
     <title>Shante Torres Portfolio</title>
+
+    <!-- <style>
+        body {
+          padding: 25px;
+          background-color: rgb(255, 255, 255);
+          color: blue;
+          font-size: 25px;
+        }
+        
+        .dark-mode {
+          background-color: black;
+          color: white;
+        }
+        </style> -->
     </head>
     <body>
     <!-- --------------- HEADER --------------- -->
@@ -42,7 +56,7 @@
             </div>
 
             <div class="nav-button">
-                <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+                <a href="https://docs.google.com/document/d/1--0_DxUrm2wnCkVm_UOZlTLEPAQ0KL86OdjqvZ7tqkU/edit?usp=sharing" target="blank"><button class="btn">Download Resume<i class="uil uil-file-alt"></i></button></a>
             </div>
             <div class="nav-menu-btn">
                 <i class="uil uil-bars" onclick="myMenuFunction()"></i>
@@ -50,16 +64,23 @@
           </nav>
    
 
+          <!-- Toggle Dark Mode -->
+          <button><input type="checkbox" id="darkToggle">
+          <label for="darkToggle"></button>
+
+
+
+
        <!-- -------------- FEATURED BOX ---------------- -->
        <main class="wrapper">
    
         <section class="featured-box" id="home">
            <div class="featured-text">
              <div class="featured-text-card">
-                 <span>Software Engineer</span>
+                 <span>Nice to meet you...</span>
              </div>
              <div class="featured-name">
-                 <p>I'm <span class="typedText"></span></p>
+                 <p>I'm a <span class="typedText"></span></p>
              </div>
              <div class="featured-text-info">
                  <p>Frontend developer with a passion for creating visually stunning
@@ -68,7 +89,7 @@
              </div>
              <div class="featured-text-btn">
                  <button class="btn blue-btn">Hire Me</button>
-                 <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+                 <a href="https://docs.google.com/document/d/1--0_DxUrm2wnCkVm_UOZlTLEPAQ0KL86OdjqvZ7tqkU/edit?usp=sharing" target="blank"><button class="btn">Download Resume<i class="uil uil-file-alt"></i></button></a>
              </div>
              <div class="social_icons">
                 <a href="https://x.com/Bfemeng?s=09" target="_blank"><div class="icon"><i class="uil uil-twitter-alt"></i></div></a>
@@ -81,7 +102,7 @@
            </div>
            <div class="featured-image">
              <div class="my_image">
-                 <img src="36 headshot.png" alt="headshot">
+                 <img src="Profile pic headshot.png" alt="headshot">
              </div>
            </div>
            <div class="scroll-icon-box">
@@ -107,11 +128,11 @@
                      that allow me to implement interactive features. My graphic skills include Figma and Adobe Creative Cloud.
                   </p>
                   <!-- <div class="about-btn">
-                      <button class="btn">Download CV <i class="uil uil-import"></i></button>
+                      <button class="btn">Download Resume <i class="uil uil-import"></i></button>
                   </div> -->
               </div>
           </div>
-          <div class="col">
+          <div class="row">
               <div class="skills-box">
                   <div class="skills-header">
                       <h3>Frontend</h3>
@@ -207,6 +228,18 @@
 
     </main>
 
+    <!--Scroll to top button-->
+    <div>
+        <div class="scroll-icon-box">
+            <a href="#home" class="scroll-btn">
+                <i class="uil uil-mouse-alt"></i>
+                <p>Scroll Up</p>
+            </a>
+          </div>
+    </div>
+
+
+
     <!-- FOOTER -->
     <footer>
         <div class="top-footer">
@@ -251,7 +284,7 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 
 	<!-- ----- MAIN JS ----- -->
-    <script src="Jan_2024_Portfolio/JS/main.js"></script>
+    <script src="main.js"></script>
 </body>
 
     </body>
