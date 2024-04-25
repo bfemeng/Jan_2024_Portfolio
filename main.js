@@ -9,11 +9,12 @@
     }
 
 // Dark Mode
-let darkToggle = document.querySelector('#darkToggle');
 
-darkToggle.addEventListener('change', ()=> {
-  document.body.classList.toggle('dark');
-});
+
+// Check user's preference and set the initial mode
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  toggleTheme(); // Start in dark mode if the user's preference is dark
+}
 
 
 
