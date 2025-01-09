@@ -597,7 +597,7 @@ footer{
     }
 }
 /* ----- MEDIA QUERY == 900px / RESPONSIVE ----- */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 600px) {
     .nav-button{
         display: none;
         font-size: 36px;
