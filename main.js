@@ -34,7 +34,7 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
     }
 /* ----- TYPING EFFECT ----- */
    var typingEffect = new Typed(".typedText",{
-      strings : ["Software Engineer ","Graphic Designer"],
+      strings : ["Software Engineer ","Project Manager"],
       loop : true,
       typeSpeed : 100, 
       backSpeed : 80,
