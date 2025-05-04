@@ -11,10 +11,10 @@
 // Dark Mode
 
 
-// Check user's preference and set the initial mode
-if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-  toggleTheme(); // Start in dark mode if the user's preference is dark
-}
+// // Check user's preference and set the initial mode
+// if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+//   toggleTheme(); // Start in dark mode if the user's preference is dark
+// }
 
 
 
@@ -33,13 +33,26 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
       }
     }
 /* ----- TYPING EFFECT ----- */
-   var typingEffect = new Typed(".typedText",{
-      strings : ["Software Engineer ","Project Manager"],
-      loop : true,
-      typeSpeed : 100, 
-      backSpeed : 80,
-      backDelay : 2000
-   })
+  //  var typingEffect = new Typed(".typedText",{
+  //     strings : ["Software Engineer ","Project & Brand Manager"],
+  //     loop : true,
+  //     typeSpeed : 100, 
+  //     backSpeed : 80,
+  //     backDelay : 2000
+  //  })
+
+
+   document.addEventListener("DOMContentLoaded", function () {
+    var typingEffect = new Typed(".typedText", {
+      strings: ["Software Engineer", "Project Manager"],
+      loop: true,
+      typeSpeed: 100,
+      backSpeed: 80,
+      backDelay: 2000
+    });
+  });
+  
+
 /* ----- ## -- SCROLL REVEAL ANIMATION -- ## ----- */
    const sr = ScrollReveal({
           origin: 'top',
