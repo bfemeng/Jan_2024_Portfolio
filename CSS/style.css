@@ -152,12 +152,22 @@ nav{
 }
 /* ----- FEATURED BOX ----- */
 .featured-box{
+    /* fix - when I delete it moves the featured pic below the intro */
     position: relative;
     display: flex;
     height: 100vh;
     min-height: 700px;
-    
 }
+
+@media (max-width: 768px) {
+    .featured-box {
+      height: auto;
+      min-height: auto;
+      flex-direction: column;
+      padding: 30px 15px;
+    }
+  }
+
 /* ----- FEATURED TEXT BOX ----- */
 .featured-text{
     position: relative;
@@ -334,7 +344,8 @@ h3{
 .about-info:hover{
         background: var(--text-color-third)
     }
-}
+
+
 .about-btn button{
     position: absolute;
     right: 20px;
